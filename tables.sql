@@ -1,3 +1,6 @@
+﻿drop table ROUTE_PDF
+/
+
 create table ROUTE_PDF
 (
 	SR_ID NUMBER not null
@@ -22,6 +25,9 @@ create table LOCATIONS
 )
 /
 
+drop table INVOICES
+/
+
 create table INVOICES
 (
 	ID NUMBER not null
@@ -29,6 +35,9 @@ create table INVOICES
 			primary key,
 	INVOICE_PDF BLOB
 )
+/
+
+DROP TABLE DISTANCE
 /
 
 create table DISTANCE
@@ -40,6 +49,9 @@ create table DISTANCE
 	CITY2 VARCHAR2(30),
 	DISTANCE NUMBER
 )
+/
+
+DROP TABLE STORE_BLOB
 /
 
 create table STORE_BLOB
