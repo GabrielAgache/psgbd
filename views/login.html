@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/login.css">
+
+</head>
+<body>
+<div>
+    <div class="form">
+        <form class="register-form" id="reg-fo" method="POST" action="../controller/register.php">
+            <input type="text" placeholder="full name" name="full_name"/>
+            <input type="password" placeholder="password" name="password"/>
+            <input id="email_input" type="text" placeholder="email" name="email" style="display:block"/>
+            <input type="date" placeholder="birth date" name="birth_date"/>
+            <input onclick="pop_email()" type="radio" name="driver_or_emp" value="driver" checked> Driver
+            <input onclick="hide_email()" type="radio" name="driver_or_emp" value="employee"> Employee
+
+            <button>create</button>
+            <p class="message">Already registered? <a onclick="switch_forms()" href="#">Sign In</a></p>
+        </form>
+        <form class="login-form" id="lo-fo" method="POST" action="../controller/login.php">
+            <input type="text" placeholder="username" name="username"/>
+            <input type="password" placeholder="password" name="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a onclick="switch_forms()" href="#">Create an account</a></p>
+
+        </form>
+    </div>
+</div>
+
+</body>
+<script > 
+function switch_forms(){
+    let login_form = document.getElementById("lo-fo");
+    let register_form = document.getElementById("reg-fo");
+
+    if (login_form.style.display === "none") 
+    {
+        login_form.style.display = "block";
+        register_form.style.display = "none";
+    } else 
+    {
+        login_form.style.display = "none";
+        register_form.style.display = "block";
+    }
+}
+
+function pop_email() {
+    let email_input = document.getElementById("email_input");
+    if (email_input.style.display === "none") 
+        email_input.style.display = "block";
+}
+
+
+function hide_email() {
+    let email_input = document.getElementById("email_input");
+    if (email_input.style.display === "block") 
+        email_input.style.display = "none";
+}
+
+
+</script>
+</html>
+
+
+

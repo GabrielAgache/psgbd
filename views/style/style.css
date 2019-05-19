@@ -1,0 +1,248 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: url(https://venturebeat.com/wp-content/uploads/2018/11/Highres-Volvo-Trucks_Autonomous-Volvo-FH-01.jpg?fit=1521%2C840&strip=all) no-repeat ;
+  color: #777;
+  background-size: cover
+}
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;}
+
+img
+{ border: 0;}
+
+h1, h2, h3, h4, h5, h6 
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #43423F;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h2
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #1293EE;}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 120% arial, sans-serif;
+  color: #1293EE;}
+
+h5, h6
+{ font: italic 95% arial, sans-serif;
+  padding: 0 0 15px 0;
+  color: #000;}
+
+h6
+{ color: #362C20;}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #F05A00;}
+
+a:hover
+{ text-decoration: none;}
+
+.left
+{ float: left;
+  width: auto;
+  margin-right: 10px;}
+
+.right
+{ float: right; 
+  width: auto;
+  margin-left: 10px;}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 20px auto;}
+
+blockquote
+{ margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ background: #336B87;
+  height: 240px;}
+
+#logo
+{ width: 825px;
+  position: relative;
+  height: 168px;
+   }
+
+#logo #logo_text 
+{ position: absolute; 
+  top: 20px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+
+
+#logo_text h2
+{ font-size: 150%;
+  padding: 4px 0 0 0;
+  color: #FFF;}
+
+#menubar
+{ width: 877px;
+  height: 72px;
+  padding: 0;
+  background: #2A3132} 
+
+ul#menu, ul#menu li
+{ float: left;
+  margin: 0; 
+  padding: 0;}
+
+ul#menu li
+{ list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  display: block; 
+  float: left; 
+  height: 37px;
+  padding: 29px 26px 6px 26px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: #FFF;
+  background: #505160}
+
+#site_content
+{ width: 837px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 20px 24px 20px 37px;
+  background: #FFF} 
+
+#addRouteButton {
+  width: 40px;
+  background-color: white;
+  color: black;
+  border: 2px solid #336B87;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  display: inline;
+}
+
+
+#addRouteButton:hover {
+  background-color: #336B87;
+  color: white;
+}
+
+
+#delRouteButton {
+  width: 40px;
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  display: inline;
+}
+
+
+#delRouteButton:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+#acceptButton {
+  width: 300px;
+  background-color: white;
+  color: black;
+  border: 2px solid #336B87;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  display: block;
+  margin: 30px 0px 5px 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+#acceptButton:hover {
+  background-color: #336B87;
+  color: white;
+}
+
+
+
+#mainform input {
+
+  padding: 5px;
+  font-size: 16px;
+  display: block;
+  margin: 5px;
+}
+
+#mainform input[type=text]:focus {
+  border: 2px solid #1293EE;
+}
+
+#mainform input[type=submit] {
+  background-color: #1293EE;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+

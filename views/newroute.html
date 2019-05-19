@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>colour_orange</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../views/style/style.css" title="style" />
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1>Transporter</h1>
+                <h2>we bring everything everywhere</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a href="newroute.php?email={{email}}">New route</a>
+                </li>
+                <li>
+                    <a href="page2.php?email={{email}}">Page2</a>
+                </li>
+                <li>
+                    <a href="dow_pdf.php?email={{email}}">Info PDF</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="site_content">
+        <div id="content">
+            <!-- insert the page content here -->
+            <h1 >Configure your route
+                <button onclick="addRouteStop()" id="addRouteButton">+</button>
+                <button onclick="delRouteStop()" id="delRouteButton">-</button>
+
+            </h1>
+
+            <form id="mainform" action="calculate_route.php" method="get">
+                <input type="number" name="max_load" placeholder="Maximim load in kg">
+                <input type="text" list="cities" name="start" placeholder="START">
+                <input type="text" list="cities" name="end" placeholder="END">
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<datalist id="cities">
+    <option>Alba Iulia</option>
+    <option>Arad</option>
+    <option>Piteşti</option>
+    <option>Bacău</option>
+    <option>Oradea</option>
+    <option>Bistriţa</option>
+    <option>Botoşani</option>
+    <option>Braşov</option>
+    <option>Brăila</option>
+    <option>Buzău</option>
+    <option>Reşiţa</option>
+    <option>Călăraşi</option>
+    <option>Cluj Napoca</option>
+    <option>Constanţa</option>
+    <option>Sfântu Gheorghe</option>
+    <option>Târgovişte</option>
+    <option>Craiova</option>
+    <option>Galaţi</option>
+    <option>Giurgiu</option>
+    <option>Târgu Jiu</option>
+    <option>Miercurea Ciuc</option>
+    <option>Deva</option>
+    <option>Slobozia</option>
+    <option>Iaşi</option>
+    <option>Bucuresti</option>
+    <option>Baia Mare</option>
+    <option>Drobeta Turnu Severin</option>
+    <option>Târgu Mureş</option>
+    <option>Piatra Neamţ</option>
+    <option>Slatina</option>
+    <option>Ploieşti</option>
+    <option>Satu Mare</option>
+    <option>Zalău</option>
+    <option>Sibiu</option>
+    <option>Suceava</option>
+    <option>Alexandria</option>
+    <option>Timişoara</option>
+    <option>Tulcea</option>
+    <option>Vaslui</option>
+    <option>Râmnicu Vâlcea</option>
+    <option>Focşani</option>
+</datalist>
+
+</body>
+
+<script type="text/javascript">
+
+    function addRouteStop() {
+        var container = document.getElementById("mainform");
+
+        var newroute = document.createElement("input");
+
+        newroute.setAttribute("type", "text");
+        newroute.setAttribute("list", "cities");
+        newroute.setAttribute("name", "stops[]");
+
+        var n = container.childElementCount;
+        var inputs = container.children;
+
+        container.insertBefore(newroute, inputs[n - 2]);
+
+    }
+
+    function delRouteStop() {
+        var container = document.getElementById("mainform");
+
+        let n = container.childElementCount;
+        if (n === 4) return;
+
+        container.removeChild(container.children[n - 3]);
+    }
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
