@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="622b515e-05a6-45ba-875d-17933fd3fc8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/AtomicRoute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/route_result.html" afterDir="false" />
-    </list>
+    <list default="true" id="622b515e-05a6-45ba-875d-17933fd3fc8a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -167,18 +163,18 @@
       <workItem from="1557589503266" duration="13769000" />
       <workItem from="1558101050644" duration="19444000" />
       <workItem from="1558182012700" duration="12975000" />
-      <workItem from="1558268612936" duration="13634000" />
+      <workItem from="1558268612936" duration="14230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59822000" />
+    <option name="totallyTimeSpent" value="60418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27899343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
