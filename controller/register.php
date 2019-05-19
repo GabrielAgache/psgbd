@@ -1,6 +1,6 @@
 <?php
 
-    require 'C:\Users\Gabriel\vendor\autoload.php';
+    require 'C:\Users\g_aga\vendor\autoload.php';
 
 
     $full_name  = $_POST['full_name'];
@@ -45,6 +45,8 @@
     } else {
         $email_2_show = $email;
     }
+
+    setcookie('cookie', $email_2_show);
 
     if ($d_or_e == "employee") {
         echo $twig->render('index.html', array(
